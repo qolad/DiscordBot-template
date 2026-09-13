@@ -1,63 +1,27 @@
-find third-party/openvr -type f | grep -E 'libopenvr|openvr_api'
-third-party/openvr/bin/androidarm64/libopenvr_api.so
-third-party/openvr/bin/linux32/libopenvr_api.so
-third-party/openvr/bin/linux32/libopenvr_api.so.dbg
-third-party/openvr/bin/win32/openvr_api.dll
-third-party/openvr/bin/win32/openvr_api.pdb
-third-party/openvr/bin/win32/openvr_api.dll.sig
-third-party/openvr/bin/linuxarm64/libopenvr_api_unity.so.dbg
-third-party/openvr/bin/linuxarm64/libopenvr_api.so
-third-party/openvr/bin/linuxarm64/libopenvr_api_unity.so
-third-party/openvr/bin/linuxarm64/libopenvr_api.so.dbg
-third-party/openvr/bin/win64/openvr_api.dll
-third-party/openvr/bin/win64/openvr_api.pdb
-third-party/openvr/bin/win64/openvr_api.dll.sig
-third-party/openvr/bin/osx32/libopenvr_api.dylib.dSYM/Contents/Resources/DWARF/libopenvr_api.dylib
-third-party/openvr/bin/osx32/libopenvr_api.dylib
-third-party/openvr/bin/linux64/libopenvr_api.so
-third-party/openvr/bin/linux64/libopenvr_api.so.dbg
-third-party/openvr/headers/openvr_api.cs
-third-party/openvr/headers/openvr_api.json
-third-party/openvr/src/openvr_api_public.cpp
-third-party/openvr/samples/bin/androidarm64/libopenvr_api.so
-third-party/openvr/samples/bin/linux32/libopenvr_api.so
-third-party/openvr/samples/bin/win32/openvr_api.dll
-third-party/openvr/samples/bin/linuxarm64/libopenvr_api.so
-third-party/openvr/samples/bin/win64/openvr_api.dll
-third-party/openvr/samples/bin/linux64/libopenvr_api.so
-third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/x86/openvr_api.dll.meta
-third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/x86/openvr_api.dll
-third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/x86_64/openvr_api.dll.meta
-third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/x86_64/openvr_api.dll
-third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/openvr_api.cs
-third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/openvr_api.bundle/Contents/Info.plist
-third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/openvr_api.bundle/Contents/MacOS.meta
-third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/openvr_api.bundle/Contents/MacOS/openvr_api.meta
-third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/openvr_api.bundle/Contents/MacOS/openvr_api
-third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/openvr_api.bundle/Contents/Info.plist.meta
-third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/openvr_api.bundle/Contents.meta
-third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/openvr_api.bundle.meta
-third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/openvr_api.cs.meta
-third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/x86/openvr_api.dll.meta
-third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/x86/openvr_api.dll
-third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/x86_64/libopenvr_api.so
-third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/x86_64/openvr_api.dll.meta
-third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/x86_64/openvr_api.dll
-third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/x86_64/libopenvr_api.so.meta
-third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/openvr_api.cs
-third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/openvr_api.bundle/Contents/Info.plist
-third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/openvr_api.bundle/Contents/MacOS.meta
-third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/openvr_api.bundle/Contents/MacOS/openvr_api.meta
-third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/openvr_api.bundle/Contents/MacOS/openvr_api
-third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/openvr_api.bundle/Contents/Info.plist.meta
-third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/openvr_api.bundle/Contents.meta
-third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/openvr_api.bundle.meta
-third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/openvr_api.cs.meta
-third-party/openvr/lib/androidarm64/libopenvr_api.so
-third-party/openvr/lib/linux32/libopenvr_api.so
-third-party/openvr/lib/win32/openvr_api.lib
-third-party/openvr/lib/linuxarm64/libopenvr_api.so
-third-party/openvr/lib/linuxarm64/libopenvr_api_unity.so
-third-party/openvr/lib/win64/openvr_api.lib
-third-party/openvr/lib/osx32/libopenvr_api.dylib
-third-party/openvr/lib/linux64/libopenvr_api.so
+grep -n "VR_Init" third-party/openvr/headers/
+openvr.h | head
+1688:/** enum values to pass in to VR_Init to identify whether the application will
+2871:           * focus once it starts rendering, but it will appear here once it calls VR_Init with the Scene application
+3663:   *       - IsNotSceneApplication (make sure to call VR_Init with VRApplicaiton_Scene)
+3689:   *       - IsNotSceneApplication (make sure to call VR_Init with VRApplicaiton_Scene)
+5741:   inline IVRSystem *VR_Init( EVRInitError *peError, EVRApplicationType eApplicationType, const char *pStartupInfo = nullptr );
+5748:   * can be called outside of VR_Init/VR_Shutdown. It should be used when an application wants
+5759:   /** Returns the name of the enum value for an EVRInitError. This function may be called outside of VR_Init()/VR_Shutdown(). */
+5763:   * use that as a key to look up their own localized error message. This function may be called outside of VR_Init()/VR_Shutdown(). */
+5766:   /** Returns the interface of the specified version. This method must be called after VR_Init. The
+6123:   VR_INTERFACE uint32_t VR_CALLTYPE VR_InitInternal2( EVRInitError *peError, EVRApplicationType eApplicationType, const char *pStartupInfo );
+vboxuser@vrmonter:~/VRMonitor$ 
+
+
+$ grep -n "VRInit" third-party/openvr/headers/o
+penvr.h | head
+1795:enum EVRInitError
+1797:   VRInitError_None        = 0,
+1798:   VRInitError_Unknown = 1,
+1800:   VRInitError_Init_InstallationNotFound                   = 100,
+1801:   VRInitError_Init_InstallationCorrupt                    = 101,
+1802:   VRInitError_Init_VRClientDLLNotFound                    = 102,
+1803:   VRInitError_Init_FileNotFound                                   = 103,
+1804:   VRInitError_Init_FactoryNotFound                                = 104,
+1805:   VRInitError_Init_InterfaceNotFound                              = 105,
+1806:   VRInitError_Init_InvalidInterface                               = 106,
