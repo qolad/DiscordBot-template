@@ -1,4 +1,14 @@
-git status
+ied commit 55e9410
+hint: use --reapply-cherry-picks to include skipped commits
+hint: Disable this message with "git config set advice.skippedCherryPicks false"
+Successfully rebased and updated refs/heads/main.
+vboxuser@vrmonter:~/VRMonitor$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+vboxuser@vrmonter:~/VRMonitor$ git status
 On branch main
 Your branch and 'origin/main' have diverged,
 and have 2 and 1 different commits each, respectively.
