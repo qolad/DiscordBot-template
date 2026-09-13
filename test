@@ -1,13 +1,24 @@
-vboxuser@vrmonter:~/VRMonitor$ git add src/main.cpp
-vboxuser@vrmonter:~/VRMonitor$ git commit -m "OpenVR Initalztion"
-[main bab4f3f] OpenVR Initalztion
- 1 file changed, 14 insertions(+), 2 deletions(-)
-vboxuser@vrmonter:~/VRMonitor$ git push
-To https://github.com/qolad/VRMonitor.git
- ! [rejected]        main -> main (non-fast-forward)
-error: failed to push some refs to 'https://github.com/qolad/VRMonitor.git'
-hint: Updates were rejected because the tip of your current branch is behind
-hint: its remote counterpart. If you want to integrate the remote changes,
-hint: use 'git pull' before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-vboxuser@vrmonter:~/VRMonitor$ 
+#include <iostream>
+#include <openvr.h>
+
+
+int main (void){
+    std::cout << "VR Monitor starting...\n";
+
+    vr::EVRInitError error = vr::VRInitError_None;
+
+    vr::IVRSystem* vrSystem = vr::VR_Init(
+        &error,
+        vr::VRApplication_Overlay
+    );
+
+    if (error != vr::VRInitError_None){
+        std::cout << "OpenVR initialization failed: " << vr::VR_GetVRInitErrorAsEnglishDescription(error) << "\n";
+        return 1;
+    }
+
+    std::cout << "OpenVR initialztion successfully!\n";
+
+    vr::VR_Shutdown;
+
+}
