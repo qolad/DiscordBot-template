@@ -1,4 +1,13 @@
-./build/VRMonitor
-VR Monitor starting...
-Unable to read VR Path Registry from /home/vboxuser/.config/openvr/openvrpaths.vrpath
-OpenVR initialization failed: Installation path could not be located (110)
+vboxuser@vrmonter:~/VRMonitor$ git add src/main.cpp
+vboxuser@vrmonter:~/VRMonitor$ git commit -m "OpenVR Initalztion"
+[main bab4f3f] OpenVR Initalztion
+ 1 file changed, 14 insertions(+), 2 deletions(-)
+vboxuser@vrmonter:~/VRMonitor$ git push
+To https://github.com/qolad/VRMonitor.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/qolad/VRMonitor.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+vboxuser@vrmonter:~/VRMonitor$ 
