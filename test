@@ -1,9 +1,63 @@
-vboxuser@vrmonter:~/VRMonitor$ git status
-On branch main
-Your branch is up to date with 'origin/main'.
-
-nothing to commit, working tree clean
-vboxuser@vrmonter:~/VRMonitor$ git log --oneline --decorate -5
-1f091d0 (HEAD -> main, origin/main, origin/HEAD) Add OpenVR SDK
-6a772c2 Delete build directory
-49940af Initial project setup
+find third-party/openvr -type f | grep -E 'libopenvr|openvr_api'
+third-party/openvr/bin/androidarm64/libopenvr_api.so
+third-party/openvr/bin/linux32/libopenvr_api.so
+third-party/openvr/bin/linux32/libopenvr_api.so.dbg
+third-party/openvr/bin/win32/openvr_api.dll
+third-party/openvr/bin/win32/openvr_api.pdb
+third-party/openvr/bin/win32/openvr_api.dll.sig
+third-party/openvr/bin/linuxarm64/libopenvr_api_unity.so.dbg
+third-party/openvr/bin/linuxarm64/libopenvr_api.so
+third-party/openvr/bin/linuxarm64/libopenvr_api_unity.so
+third-party/openvr/bin/linuxarm64/libopenvr_api.so.dbg
+third-party/openvr/bin/win64/openvr_api.dll
+third-party/openvr/bin/win64/openvr_api.pdb
+third-party/openvr/bin/win64/openvr_api.dll.sig
+third-party/openvr/bin/osx32/libopenvr_api.dylib.dSYM/Contents/Resources/DWARF/libopenvr_api.dylib
+third-party/openvr/bin/osx32/libopenvr_api.dylib
+third-party/openvr/bin/linux64/libopenvr_api.so
+third-party/openvr/bin/linux64/libopenvr_api.so.dbg
+third-party/openvr/headers/openvr_api.cs
+third-party/openvr/headers/openvr_api.json
+third-party/openvr/src/openvr_api_public.cpp
+third-party/openvr/samples/bin/androidarm64/libopenvr_api.so
+third-party/openvr/samples/bin/linux32/libopenvr_api.so
+third-party/openvr/samples/bin/win32/openvr_api.dll
+third-party/openvr/samples/bin/linuxarm64/libopenvr_api.so
+third-party/openvr/samples/bin/win64/openvr_api.dll
+third-party/openvr/samples/bin/linux64/libopenvr_api.so
+third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/x86/openvr_api.dll.meta
+third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/x86/openvr_api.dll
+third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/x86_64/openvr_api.dll.meta
+third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/x86_64/openvr_api.dll
+third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/openvr_api.cs
+third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/openvr_api.bundle/Contents/Info.plist
+third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/openvr_api.bundle/Contents/MacOS.meta
+third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/openvr_api.bundle/Contents/MacOS/openvr_api.meta
+third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/openvr_api.bundle/Contents/MacOS/openvr_api
+third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/openvr_api.bundle/Contents/Info.plist.meta
+third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/openvr_api.bundle/Contents.meta
+third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/openvr_api.bundle.meta
+third-party/openvr/samples/unity_keyboard_sample/Assets/Plugins/openvr_api.cs.meta
+third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/x86/openvr_api.dll.meta
+third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/x86/openvr_api.dll
+third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/x86_64/libopenvr_api.so
+third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/x86_64/openvr_api.dll.meta
+third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/x86_64/openvr_api.dll
+third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/x86_64/libopenvr_api.so.meta
+third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/openvr_api.cs
+third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/openvr_api.bundle/Contents/Info.plist
+third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/openvr_api.bundle/Contents/MacOS.meta
+third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/openvr_api.bundle/Contents/MacOS/openvr_api.meta
+third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/openvr_api.bundle/Contents/MacOS/openvr_api
+third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/openvr_api.bundle/Contents/Info.plist.meta
+third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/openvr_api.bundle/Contents.meta
+third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/openvr_api.bundle.meta
+third-party/openvr/samples/unity_teleport_sample/Assets/Plugins/openvr_api.cs.meta
+third-party/openvr/lib/androidarm64/libopenvr_api.so
+third-party/openvr/lib/linux32/libopenvr_api.so
+third-party/openvr/lib/win32/openvr_api.lib
+third-party/openvr/lib/linuxarm64/libopenvr_api.so
+third-party/openvr/lib/linuxarm64/libopenvr_api_unity.so
+third-party/openvr/lib/win64/openvr_api.lib
+third-party/openvr/lib/osx32/libopenvr_api.dylib
+third-party/openvr/lib/linux64/libopenvr_api.so
