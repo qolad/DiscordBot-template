@@ -1,14 +1,5 @@
- git log --oneline --decorate --graph -6
-* 82e81f7 (HEAD -> main) OpenVR Initalztion
-* 063b6f8 (origin/main, origin/HEAD) Add .gitignore to exclude build and IDE files
-* 2ce15ea Support OpenVR on Windows and Linux
-* 1f091d0 Add OpenVR SDK
-* 6a772c2 Delete build directory
-* 49940af Initial project setup
-vboxuser@vrmonter:~/VRMonitor$ git status
-On branch main
-Your branch is ahead of 'origin/main' by 1 commit.
-  (use "git push" to publish your local commits)
-
-nothing to commit, working tree clean
+vboxuser@vrmonter:~/VRMonitor$ git ls-files third-party/openvr
+third-party/openvr
+vboxuser@vrmonter:~/VRMonitor$ git check-ignore -v third-party/openvr/headers/openvr.h
+fatal: Pathspec 'third-party/openvr/headers/openvr.h' is in submodule 'third-party/openvr'
 vboxuser@vrmonter:~/VRMonitor$ 
