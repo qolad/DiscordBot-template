@@ -1,27 +1,4 @@
-grep -n "VR_Init" third-party/openvr/headers/
-openvr.h | head
-1688:/** enum values to pass in to VR_Init to identify whether the application will
-2871:           * focus once it starts rendering, but it will appear here once it calls VR_Init with the Scene application
-3663:   *       - IsNotSceneApplication (make sure to call VR_Init with VRApplicaiton_Scene)
-3689:   *       - IsNotSceneApplication (make sure to call VR_Init with VRApplicaiton_Scene)
-5741:   inline IVRSystem *VR_Init( EVRInitError *peError, EVRApplicationType eApplicationType, const char *pStartupInfo = nullptr );
-5748:   * can be called outside of VR_Init/VR_Shutdown. It should be used when an application wants
-5759:   /** Returns the name of the enum value for an EVRInitError. This function may be called outside of VR_Init()/VR_Shutdown(). */
-5763:   * use that as a key to look up their own localized error message. This function may be called outside of VR_Init()/VR_Shutdown(). */
-5766:   /** Returns the interface of the specified version. This method must be called after VR_Init. The
-6123:   VR_INTERFACE uint32_t VR_CALLTYPE VR_InitInternal2( EVRInitError *peError, EVRApplicationType eApplicationType, const char *pStartupInfo );
-vboxuser@vrmonter:~/VRMonitor$ 
-
-
-$ grep -n "VRInit" third-party/openvr/headers/o
-penvr.h | head
-1795:enum EVRInitError
-1797:   VRInitError_None        = 0,
-1798:   VRInitError_Unknown = 1,
-1800:   VRInitError_Init_InstallationNotFound                   = 100,
-1801:   VRInitError_Init_InstallationCorrupt                    = 101,
-1802:   VRInitError_Init_VRClientDLLNotFound                    = 102,
-1803:   VRInitError_Init_FileNotFound                                   = 103,
-1804:   VRInitError_Init_FactoryNotFound                                = 104,
-1805:   VRInitError_Init_InterfaceNotFound                              = 105,
-1806:   VRInitError_Init_InvalidInterface                               = 106,
+./build/VRMonitor
+VR Monitor starting...
+Unable to read VR Path Registry from /home/vboxuser/.config/openvr/openvrpaths.vrpath
+OpenVR initialization failed: Installation path could not be located (110)
