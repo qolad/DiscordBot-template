@@ -1,5 +1,10 @@
-vboxuser@vrmonter:~/VRMonitor$ git ls-files third-party/openvr
-third-party/openvr
-vboxuser@vrmonter:~/VRMonitor$ git check-ignore -v third-party/openvr/headers/openvr.h
-fatal: Pathspec 'third-party/openvr/headers/openvr.h' is in submodule 'third-party/openvr'
-vboxuser@vrmonter:~/VRMonitor$ 
+vboxuser@vrmonter:~/VRMonitor$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 376 bytes | 376.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/qolad/VRMonitor.git
+   82e81f7..015e5fa  main -> main
